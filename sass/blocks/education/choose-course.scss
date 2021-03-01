@@ -50,16 +50,15 @@
 
   .choose-course {
     position: relative;
-    margin: 110px 0;
+    margin: 135px 0;
 
     &::before {
-      @include clouds(135px, -99px);
-      top: -131px;
+      @include clouds(135px, -133px);
+      background-position: 50%
     }
 
     &::after {
-      @include clouds-bottom(135px, -99px, -99px);
-      bottom: -131px;
+      @include clouds-bottom(135px, -133px, -133px);
     }
   }
 
@@ -92,5 +91,20 @@
     left: 0;
     transform: translate(0);
     font-weight: 700;
+  }
+}
+
+@media (min-width: 1820px) {
+  .choose-course {
+    margin: 200px 0;
+
+    &::before {
+      @include clouds(200px, -199px);
+      background-position: 50%
+    }
+
+    &::after {
+      @include clouds-bottom(200px, -198px, -198px);
+    }
   }
 }

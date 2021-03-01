@@ -84,16 +84,16 @@
 
 @media (min-width: 1440px) {
   .educational-programms {
-    margin-bottom: 160px;
+    padding: 0;
+    margin: 135px 0;
 
     &::before {
-      @include clouds(135px, -99px);
-      top: -131px;
+      @include clouds(135px, -133px);
+      background-position: 50%
     }
 
     &::after {
-      @include clouds-bottom(135px, -99px, -99px);
-      bottom: -131px;
+      @include clouds-bottom(135px, -133px, -133px);
     }
   }
 
@@ -111,5 +111,20 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media (min-width: 1820px) {
+  .educational-programms {
+    margin: 200px 0;
+
+    &::before {
+      @include clouds(200px, -199px);
+      background-position: 50%
+    }
+
+    &::after {
+      @include clouds-bottom(200px, -198px, -198px);
+    }
   }
 }
